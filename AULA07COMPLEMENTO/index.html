@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulador de Lâmpada</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            background-color: rgb(255, 152, 197);
+        }
+
+        img {
+            width: 200px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+
+        #ligar {
+            background-color: #28a745;
+            color: rgb(255, 255, 255);
+        }
+
+        #desligar {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .status {
+            margin: 15px 0;
+            font-size: 18px;
+            font-weight: bold;
+            min-height: 27px;
+        }
+
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Lâmpada</h1>
+        
+        <div class="status" id="status">Lâmpada desligada</div>
+        
+        <img id="lampada" src="img/lampadaoff.png" alt="Lâmpada Desligada">
+        
+        <div>
+            <button id="ligar">Ligar</button>
+            <button id="desligar" disabled>Desligar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
