@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exercício 15</title>
+</head>
+<body>
+ <script>
+ var hora = 19;
+ var minuto = 30;
+ var dia = new Date();
+//  var hora = dia.getHours();
+//  var minuto = dia.getMinutes();
+ if ((hora >= 1 && hora <= 5)) {
+ document.write("Você não deveria estar dormindo?");
+ }
+ if ((hora >= 6 && hora <= 11)){
+ document.write("Bom dia!");
+ }
+ if (hora == 12){
+ document.write("Vamos almoçar");
+ }
+ if ((hora >= 13 && hora <= 17)) {
+ document.write("Boa Tarde!");
+ }
+ if ((hora >= 18 && hora <= 19)){
+ document.write("Bom final de Tarde!");
+ }
+ if ((hora >= 20 && hora <= 22)){
+ document.write("Boa Noite!");
+ }
+ if (hora == 23){
+ document.write("Ó meu! Já é quase meia-noite!");
+ }
+ if (hora == 0){
+ document.write("Meia-noite! Já é amanhã!");
+ }
+ </script>
+ <script>
+ if ((hora === 19))
+    {if((miunuto === 30)){
+        document.write("Vamos para aula!")
+    }
+ }
+ if ((hora === 20))
+    {if((miunuto==50)){
+        document.write("Vamos para aula!")
+    }
+ }
+ if ((hora === 22))
+    {if((miunuto === 30)){
+        document.write("Vamos para aula!")
+    }
+ }
+
+ </script>
+ <!-- Agora você deve acrescentar os seguintes testes: <br><br>
+ 1) Mensagem: "Vamos para aula!" quando for 19:30 <br>
+ 2) Mensagem: "Hora do lanche!" quando for 20:50 <br> -->
+ <!-- 3) Mensagem: "Vamos embora! Fim da aula" quando for 22:30 <br> -->
+</body>
+</html>

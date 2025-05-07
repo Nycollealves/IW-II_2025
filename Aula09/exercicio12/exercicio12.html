@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exercício 12</title>
+ <script>
+ function soma(){
+ x = eval(document.prova.c1.value) + eval(document.prova.c2.value) +
+eval(document.prova.c3.value);
+ document.prova.c4.value = x;
+ }
+ function multiplica(){
+ y = eval(document.prova.c1.value) * eval(document.prova.c2.value) *
+eval(document.prova.c3.value);
+ document.prova.c4.value = y;
+ }
+ </script>
+</head>
+<body>
+ <form action="" name="prova">
+ Entre com os valores nos campos e dê um clique nos botões<br>
+ valor1: <input type="text" name="c1" id="" size="5" maxlength="5"><br>
+ valor2: <input type="text" name="c2" id="" size="5" maxlength="5"><br>
+ valor3: <input type="text" name="c3" id="" size="5" maxlength="5"><br>
+ <input type="button" value="Somar" onclick="soma()">
+ <input type="button" value="Multiplicar" onclick="multiplica()">
+ <br><br>
+ Resposta: <input type="text" name="c4" id="" value="" size="10" maxlength="0">
+ </form>
+ <!-- O eval() é uma função que avalia ou executa um argumento. Se o argumento for uma
+expressão, eval() avalia a expressão. Se o arqgumento for uma ou mais declarações
+Javascript, eval() executa as instruções. -->
+</body>
+</html>
