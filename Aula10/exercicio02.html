@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="deletar()">CLIQUE PARA EXCLUIR</button>
+
+
+
+    <script>
+        function deletar() {
+            let botao = document.getElementById("meuBotao");
+
+           
+            
+
+            
+            
+
+            if (confirm("quer excluir?")) {
+            
+            alert("Item excluído com sucesso!");
+            } else {
+            
+            alert("Exclusão cancelada.");
+            }
+            
+        botao.onclick = deletar();
+            
+        }
+        
+
+
+            
+        
+    </script>
+</body>
+</html>
