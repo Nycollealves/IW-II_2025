@@ -7,17 +7,29 @@
 </head>
 <body>
     
-        <input type="text" id="Input">
-        <button onclick="mostrarTexto()">Mostrar Texto</button>
+    <input type="text" id="texto">
+    <button id="botao">Mostrar</button>
 
-            <script>
-                function mostrarTexto() {
-                var textovelho = "";
-                var input = document.getElementById("Input");
-                var textonovo = input.value;
-                alert(textonovo);
-                }
-            </script>
+    <script>
+
+        let campoTexto = document.getElementById("texto");
+        let botao = document.getElementById("botao");
+        
+
+        let valorAnterior = "";
+        
+
+        botao.onclick = function() {
+ 
+            let textoAtual = campoTexto.value;
+            
+
+            if(textoAtual !== valorAnterior) {
+                alert(textoAtual);
+                valorAnterior = textoAtual; 
+            }
+        };
+    </script>
 
 </body>
 </html>
